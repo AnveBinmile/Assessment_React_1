@@ -1,13 +1,5 @@
 import React from 'react';
-
-interface ButtonProps {
-  color:string,
-  text:string,
-  width:number,
-  setText: Function |  React.Dispatch<React.SetStateAction<string>> ;
-}
-
-
+import { ButtonProps } from './type';
 
 
 const Button:React.FC<ButtonProps> = ({color,width,text,setText}) => {

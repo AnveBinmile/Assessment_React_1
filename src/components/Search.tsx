@@ -1,10 +1,6 @@
 import React, { KeyboardEvent, useState } from "react";
+import { SearchProps } from "./type";
 
-
-interface SearchProps {
-  text:string;
-  setText: React.Dispatch<React.SetStateAction<string>>;
-}
 
 const Search:React.FC<SearchProps> = ({text,setText}) => {
 
