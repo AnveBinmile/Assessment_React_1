@@ -1,12 +1,11 @@
-
 export interface ButtonProps {
-    color:string,
-    text:string,
-    width:number,
-    setText: Function |  React.Dispatch<React.SetStateAction<string>> ;
-  }
+  color: string;
+  text: string;
+  width: number;
+  setText: Function | React.Dispatch<React.SetStateAction<string>>;
+}
 
 export interface SearchProps {
-  text:string;
+  text: string;
   setText: React.Dispatch<React.SetStateAction<string>>;
 }

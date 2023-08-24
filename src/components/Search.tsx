@@ -1,30 +1,32 @@
 import React, { KeyboardEvent, useState } from "react";
 import { SearchProps } from "./type";
 
-
-const Search:React.FC<SearchProps> = ({text,setText}) => {
-
-  const handleClick =()=>{
+const Search: React.FC<SearchProps> = ({ text, setText }) => {
+  const handleClick = () => {
     setText("");
-  }
+  };
 
-
-
-  const handleChange=(e:React.ChangeEvent<HTMLInputElement>)=>{
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     console.log(text);
     setText(e.target.value);
-  }
+  };
 
-  const handleKeyDown=(e:KeyboardEvent):void => {
-    if(e.key==='Enter')
-    {
+  const handleKeyDown = (e: KeyboardEvent): void => {
+    if (e.key === "Enter") {
       setText("");
     }
-  }
+  };
 
   return (
     <div className="flex rounded-[50px]  justify-between w-[100%]items-center h-[50px] flex-row border-4 items-center sm:px-2 sm:w-[80%]">
-      <input className="focus:border-none w-[90%]" type="text" value={text} onKeyDown={handleKeyDown} onChange={handleChange}  placeholder="Profession, position or company " />
+      <input
+        className="focus:border-none w-[90%]"
+        type="text"
+        value={text}
+        onKeyDown={handleKeyDown}
+        onChange={handleChange}
+        placeholder="Profession, position or company "
+      />
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="15"
@@ -61,7 +63,6 @@ const Search:React.FC<SearchProps> = ({text,setText}) => {
           stroke-width="1.31641"
         />
       </svg>
-
     </div>
   );
 };

@@ -6,7 +6,7 @@ import BackgroundSmall from "./BackgroundSmall";
 
 const Compo2main = () => {
   return (
-    <div className="sm:w-4/5  w-[100%]  bg-center flex flex-row items-center justify-center">
+    <div className="sm:w-4/5  w-[130%]  bg-center flex flex-row items-center justify-center">
       <Background />
       <BackgroundSmall />
     </div>
