@@ -1,5 +1,5 @@
 import React from "react";
-import Illustration from "../assets/Illustration.png";
+import Illustration from "../assets/images/Illustration.png";
 
 const Background = () => {
   return (
@@ -7,7 +7,8 @@ const Background = () => {
       className="w-[100%] sm:block hidden h-[800px]"
       style={{
         backgroundImage: `url(${Illustration})`,
-        backgroundSize: "cover",
+        backgroundSize: "contain",
+        backgroundRepeat:'no-repeat',
       }}
     >
       {/* Your content */}

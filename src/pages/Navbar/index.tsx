@@ -1,11 +1,8 @@
 import React from 'react';
-import Navitem from './Navitem';
-import Logo from './Logo';
-import Menu from './Menu';
-import Button from './Button';
+import Menu from './components/Menu';
+import Button from '../../components/Button';
 
-
-const Navbar = () => {
+const index = () => {
   return (
     <div className='flex sm:gap-[20px] w-[100%]  sm:flex-col lg:flex-row sm:justify-between items-center flex-col  mt-[50px]'>
         <Menu/>
@@ -17,5 +14,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar;
-
+export default index
