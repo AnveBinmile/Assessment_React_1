@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonProps } from "./type";
+import { ButtonProps } from "../.././utils/types/type";
 
 const Button: React.FC<ButtonProps> = ({ color, width, text, setText }) => {
   let styling =
@@ -11,15 +11,12 @@ const Button: React.FC<ButtonProps> = ({ color, width, text, setText }) => {
     styling += " bg-blue text-black border-2 border-black";
   }
 
-  console.log("WWWWWW", color, width, text);
-
   styling += ` w-[${width}px]`;
-
-  // console.log(styling);
 
   const handleClick = () => {
     setText("");
   };
+
   return (
     <button onClick={handleClick} className={styling}>
       {text}

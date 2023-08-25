@@ -3,46 +3,35 @@
 @tailwind utilities;
 
 
-*{
-  margin: 0;
-  padding:0;
-}
-
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@layer components {
+  .layout_img{
+    @apply  sm:w-2/3 gap-[30px] md:gap-[40px] flex flex-col justify-center w-[100%] items-start;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .layout_h1{
+    @apply font-bold text-gray-700  sm:text-6xl text-5xl
   }
-  to {
-    transform: rotate(360deg);
+
+  /* .layout_h3{
+    @apply font-normal text-gray-400 font-montserrat text-2xl
   }
+
+
+  .layout_sb{
+    @apply search flex lg:flex-row md:flex-col sm:flex-row md:gap-[30px] justify-start sm:justify-between  w-[100%] sm:w-[100%]  gap-[20px]
+  }
+
+  .layout_s{
+    @apply flex rounded-[50px]  justify-between w-[100%]items-center h-[50px] flex-row border-4 items-center px-2 sm:w-[80%]
+  }
+
+  .layout_s_i{
+    @apply focus:border-none w-[90%] outline-none
+  }
+
+  .layout_img{
+    @apply sm:w-4/5  w-[130%]  bg-center flex flex-row items-center justify-center
+  } */
+
 }
+
