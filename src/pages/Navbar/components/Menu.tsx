@@ -1,7 +1,15 @@
 import React from "react";
-import MenuItem from "./MenuItem";
-import Logo from "./Logo";
 import Vector from "./Vector";
+import {ReactComponent as Logo} from './Logo.svg'
+import { Itemprops } from "../../../components/type";
+
+
+const MenuItem:React.FC<Itemprops> = ({itemname}) => {
+  return (
+    <div className='hidden sm:block md:text-lg text-sm transition-[0.8] hover:border-b-[5px] border-black'>{itemname}</div>
+  )
+}
+
 
 const menuitems = ["New York", "For Job Seekers", "For Employers"];
 

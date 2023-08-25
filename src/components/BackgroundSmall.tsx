@@ -1,5 +1,5 @@
 import React from "react";
-import mobileBack from "../assets/mobileBack.png";
+import mobileBack from "../assets/images/mobileBack.png";
 
 const BackgroundSmall = () => {
   return (
@@ -7,7 +7,6 @@ const BackgroundSmall = () => {
       className="w-[90%] sm:hidden block h-[500px]"
       style={{ backgroundImage: `url(${mobileBack})`, backgroundSize: "cover" }}
     >
-      {/* Your content */}
     </div>
   );
 };

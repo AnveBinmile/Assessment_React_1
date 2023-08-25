@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import Search from "./Search";
-import Button from "./Button";
+import Button from "../../../components/Button";
 
-const Compo1main = () => {
-  const [text, setText] = useState<string>("");
+
+const LayoutText = () => {
+    const [text, setText] = useState<string>("");
   return (
     <div className="sm:w-2/3 gap-[30px] md:gap-[40px] flex flex-col justify-center w-[100%] items-start">
       <h1 className="font-bold text-gray-700 font-montserrat  sm:text-6xl text-5xl">
@@ -18,6 +19,6 @@ const Compo1main = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Compo1main;
+export default LayoutText;
