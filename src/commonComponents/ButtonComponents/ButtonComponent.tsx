@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonProps } from "./type";
+import { ButtonProps } from "../.././utils/types/type";
 
 const Button: React.FC<ButtonProps> = ({ color, width, text, setText }) => {
   let styling =
@@ -17,7 +17,6 @@ const Button: React.FC<ButtonProps> = ({ color, width, text, setText }) => {
     setText("");
   };
 
-  
   return (
     <button onClick={handleClick} className={styling}>
       {text}

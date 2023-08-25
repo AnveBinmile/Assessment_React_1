@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './components/Menu';
-import Button from '../../components/Button';
+import Button from '../ButtonComponents/ButtonComponent';
 
 const index = () => {
   return (

@@ -1,6 +1,6 @@
 import React, { KeyboardEvent, useState } from "react";
-import { SearchProps } from "../../../components/type";
-import {ReactComponent as Filter} from '../assets/svgs/Filter.svg'
+import { SearchProps } from "../../../utils/types/type";
+import { ReactComponent as Filter } from "../assets/svgs/Filter.svg";
 
 const Search: React.FC<SearchProps> = ({ text, setText }) => {
   const handleClick = () => {
@@ -18,16 +18,16 @@ const Search: React.FC<SearchProps> = ({ text, setText }) => {
   };
 
   return (
-    <div className="flex rounded-[50px]  justify-between w-[100%]items-center h-[50px] flex-row border-4 items-center px-2 sm:w-[80%]">
+    <div className="layout_s">
       <input
-        className="focus:border-none w-[90%] outline-none"
+        className="layout_s_i"
         type="text"
         value={text}
         onKeyDown={handleKeyDown}
         onChange={handleChange}
         placeholder="Profession, position or company "
       />
-    <Filter/>
+      <Filter />
     </div>
   );
 };
