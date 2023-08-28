@@ -1,10 +1,10 @@
-import BackgroundComponent from "./BackgroundComponent";
+import ComponentBackground from "./ComponentBackground";
 
 const LayoutImage = () => {
 
   return (
     <div className="layout_img">
-      <BackgroundComponent/>
+      <ComponentBackground/>
     </div>
   );
 };

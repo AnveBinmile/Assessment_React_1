@@ -1,5 +1,5 @@
-export {default as BackgroundComponent} from "../pages/HomeScreen/components/BackgroundComponent";
-export {default as ButtonComponent} from './ButtonComponents/ButtonComponent';
-export {default as HomeScreen} from '../pages/HomeScreen/index';
-export {default as Navbar} from '../commonComponents/Navbar';
+export {default as ComponentBackground} from "../pages/HomeScreen/components/ComponentBackground";
+export {default as ComponentButton} from './ComponentButton/ComponentButton';
+export {default as Homescreen} from '../pages/HomeScreen/Homescreen';
+export {default as ComponentNavbar} from './ComponentNavbar/ComponentNavbar';
 

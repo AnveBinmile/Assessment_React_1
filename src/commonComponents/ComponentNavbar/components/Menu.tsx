@@ -1,6 +1,6 @@
 import React from "react";
 import Vector from "./Vector";
-import { ReactComponent as Logo } from "./Logo.svg";
+import Logo from "./Logo";
 import { Itemprops } from "../../../utils/types/type";
 import { menuitems } from "../../../utils/constants/DummyData";
 

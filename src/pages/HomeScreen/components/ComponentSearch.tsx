@@ -1,6 +1,7 @@
 import React, { KeyboardEvent, useState } from "react";
 import { SearchProps } from "../../../utils/types/type";
-import { ReactComponent as Filter } from "../assets/svgs/Filter.svg";
+import { ReactComponent as FilterIcon } from "../assetsSmall/svgs/FilterIcon.svg";
+import { keyString } from "../../../utils/constants/DummyData";
 
 const Search: React.FC<SearchProps> = ({ text, setText }) => {
   const handleClick = () => {
@@ -12,7 +13,7 @@ const Search: React.FC<SearchProps> = ({ text, setText }) => {
   };
 
   const handleKeyDown = (e: KeyboardEvent): void => {
-    if (e.key === "Enter") {
+    if (e.key === keyString) {
       setText("");
     }
   };
@@ -27,7 +28,7 @@ const Search: React.FC<SearchProps> = ({ text, setText }) => {
         onChange={handleChange}
         placeholder="Profession, position or company "
       />
-      <Filter />
+      <FilterIcon />
     </div>
   );
 };

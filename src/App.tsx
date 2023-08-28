@@ -1,11 +1,13 @@
-import './App.css';
-import { Navbar,HomeScreen} from './commonComponents/Export';
+import React from "react";
+
+import "./App.css";
+import { Homescreen, ComponentNavbar } from "./commonComponents/Export";
 
 function App() {
   return (
     <div className="App mx-auto w-5/6 flex flex-col gap-[50px]">
-     <Navbar/>
-     <HomeScreen/>
+      <ComponentNavbar />
+      <Homescreen />
     </div>
   );
 }

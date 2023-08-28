@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Search from "./Search";
-import Button from "../../../commonComponents/ButtonComponents/ButtonComponent";
+import Search from "./ComponentSearch";
+import Button from "../../../commonComponents/ComponentButton/ComponentButton";
 
 
 const LayoutText = () => {

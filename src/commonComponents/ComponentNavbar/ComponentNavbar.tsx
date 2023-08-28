@@ -1,8 +1,8 @@
 import React from 'react';
 import Menu from './components/Menu';
-import Button from '../ButtonComponents/ButtonComponent';
+import Button from '../ComponentButton/ComponentButton';
 
-const index = () => {
+const ComponentNavbar = () => {
   return (
     <div className='flex sm:gap-[20px] w-[100%]  sm:flex-col lg:flex-row sm:justify-between items-center flex-col  mt-[50px]'>
         <Menu/>
@@ -14,4 +14,4 @@ const index = () => {
   )
 }
 
-export default index
+export default ComponentNavbar;
