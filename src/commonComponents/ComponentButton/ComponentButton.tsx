@@ -1,6 +1,6 @@
 import React from "react";
 // import { ButtonProps } from "../../utils/types/type";
-import { ButtonProps } from "./utils/type";
+import { ButtonProps } from "./utils/types/typeComponentButton";
 
 const Button: React.FC<ButtonProps> = ({ color, width, text, setText }) => {
   let styling =

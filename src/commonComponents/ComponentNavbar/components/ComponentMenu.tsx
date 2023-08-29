@@ -1,8 +1,8 @@
 import React from "react";
-import Vector from "./Vector";
-import Logo from "./Logo";
-import { Itemprops } from "../../../utils/types/type";
-import { menuitems } from "../../../utils/constants/DummyData";
+import Vector from "./ComponentVector";
+import Logo from "./ComponentLogo";
+import { Itemprops } from "../../utils/types/typesCommonComponents";
+import { menuitems } from "../../../pages/HomeScreen/utils/constants/DummyData";
 
 const MenuItem: React.FC<Itemprops> = ({ key, itemname }) => {
   return (

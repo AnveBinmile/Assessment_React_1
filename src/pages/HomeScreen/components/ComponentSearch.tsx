@@ -1,7 +1,7 @@
 import React, { KeyboardEvent, useState } from "react";
-import { SearchProps } from "../../../utils/types/type";
+import { SearchProps } from "../utils/types/typeHomeScreen";
 import { ReactComponent as FilterIcon } from "../../../assets/svgs/FilterIcon.svg";
-import { keyString } from "../../../utils/constants/DummyData";
+import { keyString } from "../utils/constants/DummyData";
 
 const Search: React.FC<SearchProps> = ({ text, setText }) => {
 
@@ -11,7 +11,9 @@ const Search: React.FC<SearchProps> = ({ text, setText }) => {
     }
   };
 
-
+  const handleOnSearchTextChange = () => {
+    setText("");
+  };
   return (
     <div className="layout_s">
       <input

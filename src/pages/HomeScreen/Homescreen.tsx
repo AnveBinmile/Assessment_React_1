@@ -1,5 +1,5 @@
 import React from "react";
-import { LayoutText, LayoutImage } from "./Export";
+import { LayoutText, LayoutImage } from "./components";
 
 
 

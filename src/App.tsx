@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import { Homescreen, ComponentNavbar } from "./commonComponents/Export";
+import { Homescreen, ComponentNavbar } from "./commonComponents";
 
 function App() {
   return (
