@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +16,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@layer components {
+  .layout_img{
+    @apply  sm:w-2/3 gap-[30px] md:gap-[40px] flex flex-col justify-center w-[100%] items-start;
+  }
+  
+  .layout_h1{
+    @apply font-bold text-gray-700  sm:text-6xl text-5xl;
+  }
+
+  .layout_h3{
+    @apply font-normal text-gray-400 text-2xl
+  }
+
+
+  .layout_sb{
+    @apply flex lg:flex-row md:flex-col sm:flex-row md:gap-[30px] justify-start sm:justify-between  w-[100%] sm:w-[100%]  gap-[20px]
+  }
+
+  .layout_s{
+    @apply flex rounded-[50px]  justify-between w-[100%] items-center h-[50px] flex-row border-4 items-center px-2 sm:w-[80%]
+  }
+
+  .layout_s_i{
+    @apply focus:border-none w-[90%] outline-none
+  }
+
+  .layout_img{
+    @apply sm:w-4/5  w-[130%]  bg-center flex flex-row items-center justify-center
+  }
+
+  .menu_item{
+    @apply hidden sm:block md:text-lg text-sm transition-[0.8] hover:border-b-[5px] border-black;
+  }
+
+  .menu{
+    @apply flex flex-row justify-between items-center w-[100%] sm:w-[80%] mx-[20px]  lg:w-[50%];
+  }
+
+  .vector{
+    @apply sm:hidden flex flex-row items-center justify-center gap-[20px]
+  }
+
+  .nav{
+    @apply flex sm:gap-[20px] w-[100%]  sm:flex-col lg:flex-row sm:justify-between items-center flex-col  mt-[50px];
+  }
+
+  .homescreen{
+    @apply flex mt-[50px] sm:items-center sm:justify-end gap-[50px]  md:gap-0 xl:gap-[200px] xl:flex-row flex-col items-center;
+  }
+
+}
+
+
+

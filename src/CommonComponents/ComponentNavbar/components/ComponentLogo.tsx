@@ -1,7 +1,6 @@
 import React from "react";
-// import Logo from '../assets/logo.jpg'
 
-const Logo: React.FC = () => {
+const Logo = () => {
   return (
     <div>
       <svg
