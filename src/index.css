@@ -59,6 +59,15 @@ code {
     @apply sm:hidden flex flex-row items-center justify-center gap-[20px]
   }
 
+  .nav{
+    @apply flex sm:gap-[20px] w-[100%]  sm:flex-col lg:flex-row sm:justify-between items-center flex-col  mt-[50px];
+  }
+
+  .homescreen{
+    @apply flex mt-[50px] sm:items-center sm:justify-end gap-[50px]  md:gap-0 xl:gap-[200px] xl:flex-row flex-col items-center;
+  }
+
 }
+
 
 
